@@ -2,7 +2,7 @@ package com.exam.service.impl;
 
 import com.exam.model.exam.Category;
 import com.exam.model.exam.Quiz;
-import com.exam.repo.QuizRepository;
+import com.exam.repository.QuizRepository;
 import com.exam.service.QuizService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

@@ -1,30 +1,17 @@
 package com.exam;
-
 import com.exam.helper.UserFoundException;
 import com.exam.model.Role;
 import com.exam.model.User;
 import com.exam.model.UserRole;
-import com.exam.model.exam.Quiz;
-import com.exam.repo.QuizRepository;
+import com.exam.repository.QuizRepository;
 import com.exam.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.UrlResource;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
-import org.springframework.web.servlet.mvc.method.annotation.MvcUriComponentsBuilder;
 
-import java.io.ByteArrayInputStream;
-import java.io.FileInputStream;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
 
 @SpringBootApplication
@@ -57,10 +44,12 @@ public class ExamserverApplication implements CommandLineRunner {
 //
 //            user.setFirstName("Satish");
 //            user.setLastName("Patil");
-//            user.setUsername("satish.patil");
+//            user.setUsername("satya.patil");
 //            user.setPassword(this.bCryptPasswordEncoder.encode("abc"));
 //            user.setEmail("syptil0803gmail.com");
 //            user.setProfile("default.png");
+//            user.setPhone("9552021923");
+//            user.setProfile("default.jpg");
 //
 //            Role role1 = new Role();
 //            role1.setRoleId(44L);

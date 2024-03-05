@@ -32,8 +32,8 @@ public class UserController {
 
 
         user.setProfile("default.png");
-        //encoding password with bcryptpasswordencoder
 
+        //        encoding password with bcryptpasswordencoder
         user.setPassword(this.bCryptPasswordEncoder.encode(user.getPassword()));
 
         Set<UserRole> roles = new HashSet<>();
